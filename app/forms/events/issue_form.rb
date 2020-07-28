@@ -12,7 +12,8 @@ module Events
     end
 
     def event
-      @event ||= IssueEvent.new(create_params) #TODO correctly implements
+      params
+      # @event ||= IssueEvent.new(create_params) #TODO correctly implements
     end
 
     private

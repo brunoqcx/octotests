@@ -5,5 +5,7 @@ module Events
 
       false
     end
+
+    def event;end
   end
 end

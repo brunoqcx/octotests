@@ -1,4 +1,4 @@
-class EventsController < ApplicatonController
+class EventsController < ApplicationController
   def create
     if form.save
       render json: form.event, status: :created
@@ -18,6 +18,6 @@ class EventsController < ApplicatonController
   end
 
   def type_param
-    "issues" #TODO grab from header
+    request.headers['X-GitHub-Event']
   end
 end

@@ -6,5 +6,4 @@ RSpec.describe Event, type: :model do
     it { is_expected.to validate_presence_of(:action) }
     it { is_expected.to validate_presence_of(:type) }
   end
-
 end

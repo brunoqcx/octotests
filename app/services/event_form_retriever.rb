@@ -7,7 +7,7 @@ class EventFormRetriever
     begin 
       "Events::#{klass}Form".constantize
     rescue NameError => e
-      Events::NilForm
+      Events::BaseForm
     end
   end
 

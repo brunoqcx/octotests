@@ -5,7 +5,7 @@ RSpec.describe EventFormRetriever, type: :service do
     context 'providing a invalid type' do
       let(:type) { ['blah'].sample }
 
-      it { is_expected.to eq(Events::NilForm) }
+      it { is_expected.to eq(Events::BaseForm) }
     end
 
     context 'providing a valid type' do
